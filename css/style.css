@@ -11,8 +11,12 @@
 /* #1b1c1e; second main color  */
 
 body {
+    overflow-y:hidden;
     overflow-x:hidden;
+    background-color:#1b1c1e;
 }
+
+
 
 
 /* Start Loader  */
@@ -82,6 +86,21 @@ body {
 
 /* End Scroll to top button */
 
+
+/* Switch lang */
+.switch-lang {
+    display:block;
+    position:fixed;
+    bottom:0;
+    left:30px;
+    z-index:8;
+}
+
+.switch-lang img {
+    max-width: 25px;
+}
+
+/* Switch lang */
 
 /* Start Navbar */
 nav {
@@ -324,7 +343,7 @@ nav .sm-ul a:hover {
 
 /* Start Slider */
 .slider {
-    background:url('../imgs/slider.jpg') center center no-repeat fixed;
+    background:url('../imgs/slider1.jpg') center center no-repeat fixed;
     background-size:cover;
     height:100vh;
 }
@@ -402,6 +421,7 @@ nav .sm-ul a:hover {
     overflow:hidden;
     padding-bottom:100px;
     padding-top:50px;
+    opacity:0;
 }
 
 .about span.shadow-behind {
@@ -422,6 +442,11 @@ nav .sm-ul a:hover {
     }
 }
 
+
+.about .about-main-p {
+    text-align:center;
+    margin-top:-20px;
+}
 
 
 .about h2 {
@@ -505,13 +530,26 @@ nav .sm-ul a:hover {
     color:#FFF;
     margin:20px auto;
     margin-left:-270px;
+    opacity:0;
 }
 
 
-.m-v-g .main-line section.vision {
+/* .m-v-g .main-line section.vision {
     margin-top:50px;
     margin-bottom:50px;
+
 }
+
+.m-v-g .main-line section.goal,
+.m-v-g .main-line section.mission {
+    margin-left:10PX;
+}
+
+.m-v-g .main-line section.vision {
+    margin-left:-500px;
+} */
+
+
 
 .m-v-g .main-line section h3 {
     margin-left:25px;
@@ -533,6 +571,9 @@ nav .sm-ul a:hover {
     border:2px solid #13a79f;
     margin-left:25px;
 }
+
+
+
 /* End M-V-G */
 
 
@@ -576,6 +617,7 @@ nav .sm-ul a:hover {
 }
 
 .services .serv {
+    height:200px;
     background-color:#181718;
     margin:20px 0px;
     overflow:hidden;
@@ -644,6 +686,8 @@ nav .sm-ul a:hover {
     color:#FFF;
 }
 
+
+
 /* End Services */
 
 
@@ -680,8 +724,8 @@ nav .sm-ul a:hover {
 
 
 .item img {
-    max-width:100px;
-    height:100px;
+    max-width:120px;
+    height:120px;
     margin:10px auto;
     background:none;
     border-radius:50%;
@@ -777,6 +821,7 @@ nav .sm-ul a:hover {
     text-align:center;
     cursor:pointer;
     margin-top:20px;
+    margin-bottom:30px;
 }
 
 .contact section h3 i {
@@ -790,8 +835,9 @@ nav .sm-ul a:hover {
 }
 
 .contact section p {
-    font-size:18px;
+    font-size:14px;
     color:#E1E8E1;    
+    margin-top:10px;
 }
 
 .contact form {
