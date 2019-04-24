@@ -96,7 +96,7 @@ $('.owl-carousel').owlCarousel({
         },
 
         1500:{
-            items :5
+            items :4
         }
     }
 });
@@ -116,5 +116,34 @@ $(document).ready(function () {
 
 /* Start About */
 
+$(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('.about').offset().top - 250) {
+            $('.about').animate({
+                opacity : 1,
+            }, 500);
+        }
+    })
+}) 
 
 /* End About */
+
+/* Start M.V.G */
+$(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('.m-v-g').offset().top - 400) {
+            $('.m-v-g .goal').animate({
+                opacity: 1,
+            }, 200);
+
+            $('.m-v-g .vision').delay(500).animate({
+                opacity: 1,
+            }, 200);
+
+            $('.m-v-g .mission').delay(1000).animate({
+                opacity: 1,
+            }, 200);
+        }
+    });
+});
+/* End M.V.G */
